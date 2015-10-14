@@ -327,7 +327,8 @@ evgMrm::isr(evgMrm *evg, bool pci) {
     (void)pci;
 #endif
 
-#if defined(vxWorks) || defined(__rtems__)
+#if 1
+//defined(vxWorks) || defined(__rtems__)
     /* actually: if isr runs in kernel mode */
 
         /*
