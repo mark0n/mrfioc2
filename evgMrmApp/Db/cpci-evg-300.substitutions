@@ -73,6 +73,11 @@ pattern { P, EVG, seqNum, NELM }
 { "$(SYS){$(D)-SoftSeq:2}", $(EVG), 2, 2047 }
 }
 
+file frib.db {
+pattern { P }
+{ "$(SYS){$(D)-SoftSeq:" }
+}
+
 file evgTrigEvt.db {
 pattern { P, OBJ, EVG, trigEvtNum }
 { "$(SYS){$(D)-TrigEvt:0}", "$(EVG):TrigEvt0", $(EVG), 0 }

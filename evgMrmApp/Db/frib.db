@@ -1,0 +1,18 @@
+record(fanout, "$(P)0}Fanout") {
+  field(LNK1, "$(P)2}Unload-Cmd")
+  field(LNK2, "$(P)1}Load-Cmd")
+  field(LNK3, "$(P)1}Enable-Cmd")
+}
+
+record(fanout, "$(P)1}Fanout") {
+  field(LNK1, "$(P)0}Unload-Cmd")
+  field(LNK2, "$(P)2}Load-Cmd")
+  field(LNK3, "$(P)2}Enable-Cmd")
+}
+
+record(fanout, "$(P)2}Fanout") {
+  field(LNK1, "$(P)1}Unload-Cmd")
+  field(LNK2, "$(P)0}Load-Cmd")
+  field(LNK3, "$(P)0}Enable-Cmd")
+}
+
